@@ -30,6 +30,14 @@ $(document).ready(function(){
         let incorPoruka = $('#porukaError');
         naKljucGore(poruka,regexPoruka,incorPoruka);
     })
+
+
+    lc_lightbox('.elem', {
+        wrap_class: 'lcl_fade_oc',
+        gallery : true,
+        thumb_attr: 'data-lcl-thumb',
+        skin: 'light'
+    });
 })
 
 
