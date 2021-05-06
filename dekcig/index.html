@@ -23,13 +23,16 @@
                <div class="collapse navbar-collapse" id="show-menu">
                   <ul class="navbar-nav ml-auto">
                      <li class="nav-item active">
-                        <a class="nav-link" href="#home">Pocetna</a>
+                        <a class="nav-link" href="#home">Početna</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#about">O nama</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#service">Produkti</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#contact">Galerija</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#contact">Kontakt</a>
@@ -57,24 +60,24 @@
                   <img class="d-block w-100" src="imgs/slide4.jpg" alt="slider_img">
                   <div class="ovarlay_slide_cont">
                      <h2>Volimo da radimo</h2>
-                     <h4>Cenimo i postujemo nase klijente</h4>
+                     <h4>Cenimo i poštujemo naše klijente</h4>
                      <p></p>
-                     <a class="blue_bt" href="#about">Procitajte nesto o nama</a>
+                     <a class="blue_bt" href="#about">Pročitajte nešto o nama</a>
                   </div>
                </div>
                <div class="carousel-item">
                   <img class="d-block w-100" src="imgs/slide2.jpg" alt="slider_img">
                   <div class="ovarlay_slide_cont">
-                     <h2>Posao nas inspirise</h2>
+                     <h2>Posao nas inspiriše</h2>
                      <h4>Kontaktirajte nas</h4>
-                     <p>Javite nam se i docicemo da vam odradimo posao</p>
+                     <p>Javite nam se i doćićemo da vam odradimo posao</p>
                      <a class="blue_bt" href="#contact">Kontakt</a>
                   </div>
                </div>
                <div class="carousel-item">
                   <img class="d-block w-100" src="imgs/slide3.jpg" alt="slider_img">
                   <div class="ovarlay_slide_cont">
-                     <h2>Ucinite vas dom udobnim</h2>
+                     <h2>Učinite vaš dom udobnim</h2>
                      <h4>Odaberite iz velike ponude neverovatnih cigli</h4>
                      <p>Tu smo da pomognemo.</p>
                      <a class="blue_bt" href="#service">Pogledajte produkte</a>
@@ -94,8 +97,8 @@
             <div class="row">
                <div class="col-md-5">
                   <h4>O dekorativnim ciglama</h4>
-                  <h3 style="text-transform: none !important">Mi gradimo vas komfort</h3>
-                  <p>Jako je bitno osecati se dobro i zdravo u svom licnom prostoru. Neminovno je da moramo provoditi vreme u svoja 4 zida, al ako vec moramo zasto onda ne ucinimo te zidove lepsim za gledanje i osecati se lepse u njihovom prisustvu.</p>
+                  <h3 style="text-transform: none !important">Mi gradimo vaš komfort</h3>
+                  <p>Jako je bitno osećati se dobro i zdravo u svom ličnom prostoru. Neminovno je da moramo provoditi vreme u svoja 4 zida, al ako već moramo zašto onda ne učinimo te zidove lepšim za gledanje i osećati se lepše u njihovom prisustvu.</p>
                </div>
                <div class="col-md-6 offset-md-1">
                   <div class="full text_align_center">
@@ -136,7 +139,7 @@
             <div class="row">
                <div class="col-md-7">
                   <h3>Cigle</h3>
-                  <p>Postoje razni tipovi cigli, na vama je izbor najboljeg dozivljaja vaseg doma.</p>
+                  <p>Postoje razni tipovi cigli, na vama je izbor najboljeg doživljaja vašeg doma.</p>
                </div>
                <div class="col-md-5">
                </div>
@@ -144,7 +147,7 @@
             <div class="row">
                <div class="col-md-4 service_blog">
                   <img class="margin_top_30 img-responsive" src="imgs/slika2.jpg" alt="#" />
-                  <h3 class="blog_head">Sarene cigle</h3>
+                  <h3 class="blog_head">Šarene cigle</h3>
                </div>
                <div class="col-md-4 service_blog">
                   <img class="margin_top_30 img-responsive" src="imgs/slika3.jpg" alt="#" />
@@ -169,7 +172,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-7">
-                  <h3>Rezervisite Online</h3>
+                  <h3>Rezervišite Online</h3>
                </div>
                <div class="col-md-5">
                </div>
@@ -177,13 +180,18 @@
             <div class="row">
                <div class="col-md-7">
                   <div class="contact-form">
-                     <form>
-                        <input type="text" placeholder="Ime" />
-                        <input type="email" placeholder="Email" />
-                        <input type="text" placeholder="Telefon" />
-                        <input type="text" placeholder="Tip cigle">
-                        <textarea placeholder="Poruka"></textarea>
-                        <input type="submit" value="Posalji">
+                     <form action="provera()">
+                        <input type="text" name="ime" id="ime" placeholder="Ime" />
+                        <p style="color:red; font-weight: bold;" class="d-none" id="imeError">Nepravilno uneseno ime</p>
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                        <p style="color:red; font-weight: bold;" class="d-none" id="emailError">Nepravilno unesen email</p>
+                        <input type="text" name="telefon" id="telefon" placeholder="Telefon" />
+                        <p style="color:red; font-weight: bold;" class="d-none" id="telefonError">Nepravilno unesen telefon</p>
+                        <input type="text" name="tip" id="tip" placeholder="Tip cigle">
+                        <p style="color:red; font-weight: bold;" class="d-none" id="tipError">Nepravilno unesen tip</p>
+                        <textarea name="poruka" id="poruka" placeholder="Poruka"></textarea>
+                        <p style="color:red; font-weight: bold;" class="d-none" id="porukaError">Nepravilno unesena poruka</p>
+                        <input type="submit" name="posalji" id="btn-kontakt" onclick="provera()" value="Posalji">
                      </form>
                   </div>
                </div>
@@ -198,7 +206,7 @@
             <div class="row">
                <div class="col-md-12 text_align_center">
                   <h3>O nama</h3>
-                  <p>Nasa firma postoji od 2000. godine, nismo nikoga razocarali do danasnjeg dana.</p>
+                  <p>Naša firma postoji od 2000. godine, nismo nikoga razočarali do današnjeg dana.</p>
                </div>
                <div class="col-md-5">
                </div>
@@ -206,8 +214,8 @@
             <div class="row">
                <div class="col-md-11">
                   <div class="full testimonial_blog">
-                     <p>Nas posao</p>
-                     <p>Bavimo se godinama ugradnjom i usavrsavanjem tehnike postavljanja dekorativnih cigli, i zelimo da integrisemo nas zanat u sto vise domova kako bi se ljudi oko nas osecali bolje, prijatnije i zadovoljnije.</p>
+                     <p>Naš posao</p>
+                     <p>Bavimo se godinama ugradnjom i usavršavanjem tehnike postavljanja dekorativnih cigli, i želimo da integrišemo naš zanat u što više domova kako bi se ljudi oko nas osećali bolje, prijatnije i zadovoljnije.</p>
                   </div>
                </div>
             </div>
@@ -218,7 +226,7 @@
             <div class="row">
                <div class="col-md-4 col-sm-6">
                   <h3>Pretplata</h3>
-                  <p>Prijavite se na nove akcije i produkte i poslacemo vam obavestenje na mejl.</p>
+                  <p>Prijavite se na nove akcije i produkte i poslaćemo vam obaveštenje na mejl.</p>
                </div>
                <div class="col-md-8 col-sm-6">
                   <form>
@@ -236,14 +244,14 @@
                   <div class="footer_blog_section">
                      <!-- <img src="imgs/logo.png" alt="#" /> -->
                      <u><a href="#">Dekorativne cigle</a></u>
-                     <p style="margin-top: 5px;">Nova tehnologija dekorativnih cigli ce vam ugrejati i ucitini vreme provedeno unutra mnogo prijatnije.</p>
+                     <p style="margin-top: 5px;">Nova tehnologija dekorativnih cigli će vam ugrejati i učitini vreme provedeno unutra mnogo prijatnije.</p>
                   </div>
                </div>
                <div class="col-lg-2 col-md-6 col-12">
                   <div class="item">
                      <h4 class="text-uppercase">Navigacija</h4>
                      <ul>
-                        <li><a href="#">Pocetna</a></li>
+                        <li><a href="#">Početna</a></li>
                         <li><a href="#about">O nama</a></li>
                         <li><a href="#contact">Kontakt</a></li>
                         <li><a href="#service">Produkti</a></li>
@@ -253,7 +261,7 @@
                <div class="col-lg-4 col-md-6 col-12">
                   <div class="item">
                      <h4 class="text-uppercase">Kontakt</h4>
-                     <p><strong>Adresa nase kancelarije:</strong></p>
+                     <p><strong>Adresa naše kancelarije:</strong></p>
                      <p><img src="imgs/phone_icon.png" alt="#" /> Ulica 123, BG 11060 Palilula</p>
                      <p><strong>Telefon:</strong></p>
                      <p><img src="imgs/location.png" alt="#" /> 066 543 210</p>
@@ -261,10 +269,10 @@
                </div>
                <div class="col-lg-3 col-md-6 col-12">
                   <div class="item">
-                     <h4 class="text-uppercase">Saznaj vise</h4>
+                     <h4 class="text-uppercase">Saznaj više</h4>
                      <ul>
-                        <li><a href="#">Pomoc</a></li>
-                        <li><a href="#">Kako mi funkcionisemo</a></li>
+                        <li><a href="#">Pomoć</a></li>
+                        <li><a href="#">Kako mi funkcionišemo</a></li>
                         <li><a href="#">Pretplati se</a></li>
                         <li><a href="#">Kontaktiraj nas</a></li>
                      </ul>
@@ -278,32 +286,34 @@
       </footer>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/validation.js"></script>
       <script>
          $(function () {
-             
+
              'use strict';
-             
+
              var winH = $(window).height();
-             
-             $('header').height(winH);  
-             
+
+             $('header').height(winH);
+
              $('header .container > div').css('top', (winH / 2) - ( $('header .container > div').height() / 2));
-             
+
              $('.navbar ul li a.search').on('click', function (e) {
                  e.preventDefault();
              });
              $('.navbar a.search').on('click', function () {
                  $('.navbar form').fadeToggle();
              });
-             
+
              $('.navbar ul.navbar-nav li a').on('click', function (e) {
-                 
+
                  var getAttr = $(this).attr('href');
-                 
+
                  e.preventDefault();
                  $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
              });
          })
       </script>
+      <p>test pull-a</p>
    </body>
 </html>
