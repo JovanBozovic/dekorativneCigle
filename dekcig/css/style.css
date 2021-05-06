@@ -205,7 +205,6 @@ p {
     border: none;
     height: 60px;
     padding: 0 20px;
-    text-transform: uppercase;
     margin: 15px 0;
 }
 
@@ -1240,4 +1239,8 @@ p {
     width: 100%;
 }
 
+}
+
+.d-none{
+    display:none;
 }

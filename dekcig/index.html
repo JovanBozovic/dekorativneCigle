@@ -180,14 +180,19 @@
             <div class="row">
                <div class="col-md-7">
                   <div class="contact-form">
-                    <form>
-                      <input type="text" name="ime" placeholder="Ime" />
-                      <input type="email" name="email" placeholder="Email" />
-                      <input type="text" name="telefon" placeholder="Telefon" />
-                      <input type="text" name="tip" placeholder="Tip cigle">
-                      <textarea name="poruka" placeholder="Poruka"></textarea>
-                      <input type="submit" name="posalji" id="btn-kontakt" value="Posalji">
-                   </form>
+                     <form action="provera()">
+                        <input type="text" name="ime" id="ime" placeholder="Ime" />
+                        <p style="color:red; font-weight: bold;" class="d-none" id="imeError">Nepravilno uneseno ime</p>
+                        <input type="email" name="email" id="email" placeholder="Email" />
+                        <p style="color:red; font-weight: bold;" class="d-none" id="emailError">Nepravilno unesen email</p>
+                        <input type="text" name="telefon" id="telefon" placeholder="Telefon" />
+                        <p style="color:red; font-weight: bold;" class="d-none" id="telefonError">Nepravilno unesen telefon</p>
+                        <input type="text" name="tip" id="tip" placeholder="Tip cigle">
+                        <p style="color:red; font-weight: bold;" class="d-none" id="tipError">Nepravilno unesen tip</p>
+                        <textarea name="poruka" id="poruka" placeholder="Poruka"></textarea>
+                        <p style="color:red; font-weight: bold;" class="d-none" id="porukaError">Nepravilno unesena poruka</p>
+                        <input type="submit" name="posalji" id="btn-kontakt" onclick="provera()" value="Posalji">
+                     </form>
                   </div>
                </div>
                <div class="col-md-5 text_align_center">
@@ -281,6 +286,7 @@
       </footer>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/validation.js"></script>
       <script>
          $(function () {
 
