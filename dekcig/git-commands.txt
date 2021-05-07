@@ -10,7 +10,6 @@ git checkout -b new-branch = create a new branch
 git checkout *commit hash* = travel back to old commit
 git status = check status of changes
 git log = see all previous saved changes (commits)
-<<<<<<< HEAD
 git remote add origin <server> = connect to a remote repository
 git branch = list all branches in your repo and also tell in which branch you currently are in
 git merge <branchname> = merge a different branch into your active branch
