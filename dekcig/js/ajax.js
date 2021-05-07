@@ -11,10 +11,10 @@
     'Accept': 'application/json'
 }
 }).then(response => {
-    status.innerHTML = "Thanks for your submission!";
+    status.innerHTML = "Poruka je uspesno poslata!";
     form.reset()
 }).catch(error => {
-    status.innerHTML = "Oops! There was a problem submitting your form"
+    status.innerHTML = "Desila se greska prilikom slanja poruke."
 });
 }
     form.addEventListener("submit", handleSubmit)
