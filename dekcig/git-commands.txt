@@ -16,5 +16,3 @@ git branch = list all branches in your repo and also tell in which branch you cu
 git merge <branchname> = merge a different branch into your active branch
 git fetch origin----------------|
 git reset --hard origin/master   ------- drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it
-=======
->>>>>>> cc0c98d71b3ab29bd019f41c19f6b047d19451d8
