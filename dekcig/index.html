@@ -181,18 +181,19 @@
             <div class="row">
                <div class="col-md-7">
                   <div class="contact-form">
-                     <form action="provera()">
+                     <form id="my-form" action="https://formspree.io/f/xknkoajq"
+                           method="POST">
                         <input type="text" name="ime" id="ime" placeholder="Ime" />
                         <p style="color:red; font-weight: bold;" class="d-none" id="imeError">Nepravilno uneseno ime</p>
-                        <input type="email" name="email" id="email" placeholder="Email" />
+                        <input type="email" name="_replyto" id="email" placeholder="Email" />
                         <p style="color:red; font-weight: bold;" class="d-none" id="emailError">Nepravilno unesen email</p>
                         <input type="text" name="telefon" id="telefon" placeholder="Telefon" />
                         <p style="color:red; font-weight: bold;" class="d-none" id="telefonError">Nepravilno unesen telefon</p>
                         <input type="text" name="tip" id="tip" placeholder="Tip cigle">
                         <p style="color:red; font-weight: bold;" class="d-none" id="tipError">Nepravilno unesen tip</p>
-                        <textarea name="poruka" id="poruka" placeholder="Poruka"></textarea>
+                        <textarea name="message" id="poruka" placeholder="Poruka"></textarea>
                         <p style="color:red; font-weight: bold;" class="d-none" id="porukaError">Nepravilno unesena poruka</p>
-                        <input type="submit" name="posalji" id="btn-kontakt" onclick="provera()" value="Posalji">
+                        <button type="submit">Posalji</button>
                      </form>
                   </div>
                </div>
@@ -411,6 +412,9 @@
       <script src="js/bootstrap.min.js"></script>
       <script src="js/lc_lightbox.lite.min.js"></script>
       <script src="js/validation.js"></script>
+      <script src="js/ajax.js"></script>
+      <script src="js/react.js"></script>
+      <script src="js/main.js"></script>
       <script>
          $(function () {
 
@@ -439,7 +443,6 @@
          })
       </script>
 
-      // inicijalizacija lightbox-a nad elementima sa klasom elem
 
 
    </body>
