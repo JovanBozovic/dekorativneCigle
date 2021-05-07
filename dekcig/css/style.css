@@ -1245,3 +1245,8 @@ p {
     display:none;
 }
 
+#header{
+    z-index: 9999999999;
+    width: 100%;
+    position:fixed;
+}
