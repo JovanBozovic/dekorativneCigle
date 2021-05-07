@@ -2,9 +2,9 @@ git init = initialize project to use git
 git add . = add all changes to be saved
 git add filename = add single file to be saved
 git commit -m "message" = save changes with a message
-git push origin master = push changes to github master
+git push origin branch-name = push changes to github master
 git push origin new-branch = push changes to github new-branch
-git pull origin master = pull changes from github master to local P
+git pull origin branch-name = pull changes from github master to local P
 git pull = je ona sto ce zapravo raditi, ova iznad slabije radi
 git checkout -b new-branch = create a new branch
 git checkout *commit hash* = travel back to old commit
@@ -14,4 +14,9 @@ git remote add origin <server> = connect to a remote repository
 git branch = list all branches in your repo and also tell in which branch you currently are in
 git merge <branchname> = merge a different branch into your active branch
 git fetch origin----------------|
-git reset --hard origin/master   ------- drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it
+git reset --hard branch-name   ------- drop all your local changes and commits, fetch the latest history from the server and point your local master branch at it
+git remote set-url origin https://git-repo/new-repository.git = point to a different remote repository
+git checkout newbranch = switch to a different branch
+git reset --hard
+git clean -d -f
+git push -f origin branch-name
