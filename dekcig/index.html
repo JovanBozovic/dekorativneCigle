@@ -7,6 +7,7 @@
       <link rel="stylesheet" href="css/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/fontawesome.min.css">
+      <link rel="stylesheet" href="css/lc_lightbox.min.css">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
    </head>
    <body>
@@ -146,23 +147,23 @@
             </div>
             <div class="row">
                <div class="col-md-4 service_blog">
-                  <img class="margin_top_30 img-responsive" src="imgs/slika2.jpg" alt="#" />
+                  <img class="margin_top_30 img-responsive" src="imgs/slika2.jpg" class="elem" alt="#" />
                   <h3 class="blog_head">Šarene cigle</h3>
                </div>
                <div class="col-md-4 service_blog">
-                  <img class="margin_top_30 img-responsive" src="imgs/slika3.jpg" alt="#" />
+                  <img class="margin_top_30 img-responsive" src="imgs/slika3.jpg" class="elem" alt="#" />
                   <h3 class="blog_head">Bela cigla</h3>
                </div>
                <div class="col-md-4 service_blog">
-                  <img class="margin_top_30 img-responsive" src="imgs/slika4.jpg" alt="#" />
+                  <img class="margin_top_30 img-responsive" src="imgs/slika4.jpg" class="elem" alt="#" />
                   <h3 class="blog_head">Pod uglom</h3>
                </div>
                <div class="col-md-4 service_blog">
-                  <img class="margin_top_30 img-responsive" src="imgs/slika5.jpg" alt="#" />
+                  <img class="margin_top_30 img-responsive" src="imgs/slika5.jpg" class="elem" alt="#" />
                   <h3 class="blog_head">Stub od cigli</h3>
                </div>
                <div class="col-md-4 service_blog">
-                  <img class="margin_top_30 img-responsive" src="imgs/slika6.jpg" alt="#" />
+                  <img class="margin_top_30 img-responsive" src="imgs/slika6.jpg" class="elem" alt="#" />
                   <h3 class="blog_head">TV na ciglama</h3>
                </div>
             </div>
@@ -237,6 +238,69 @@
             </div>
          </div>
       </div>
+
+<!--      GALERIJA -->
+      <div class="container">
+      <div class="col-12 mb-5 text-center">
+      <div class="col-lg-3 col-md-6 mb-5">
+         <div class="post-entry-1 h-100">
+            <a class="elem"
+               href="imgs/slika1.jpg"
+               title="Prva slika"
+               data-lcl-txt="Opis prve slike"
+               data-lcl-thumb="thumb">
+                <span style="background-image: url('imgs/slika1.jpg');">
+                <img src="imgs/slika1.jpg" alt="alt"
+                     class="img-fluid"/>
+                </span>
+            </a>
+         </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+         <div class="post-entry-1 h-100">
+            <a class="elem"
+               href="imgs/slika2.jpg"
+               title="Druga slika"
+               data-lcl-txt="Opis druge slike"
+               data-lcl-thumb="thumb">
+                <span style="background-image: url('imgs/slika2.jpg');">
+                <img src="imgs/slika2.jpg" alt="alt"
+                     class="img-fluid"/>
+                </span>
+            </a>
+         </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+         <div class="post-entry-1 h-100">
+            <a class="elem"
+               href="imgs/slika3.jpg"
+               title="Treca slika"
+               data-lcl-txt="Opis trece slike"
+               data-lcl-thumb="thumb">
+                <span style="background-image: url('imgs/slika3.jpg');">
+                <img src="imgs/slika3.jpg" alt="alt"
+                     class="img-fluid"/>
+                </span>
+            </a>
+         </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-5">
+         <div class="post-entry-1 h-100">
+            <a class="elem"
+               href="imgs/slika4.jpg"
+               title="Cetvrta slika"
+               data-lcl-txt="Opis cetvrte slike"
+               data-lcl-thumb="thumb">
+                <span style="background-image: url('imgs/slika4.jpg');">
+                <img src="imgs/slika1.jpg" alt="alt"
+                     class="img-fluid"/>
+                </span>
+            </a>
+         </div>
+      </div>
+      </div>
+      </div>
+<!--      KRAJ GALERIJE-->
       <footer>
          <div class="container">
             <div class="row">
@@ -286,6 +350,7 @@
       </footer>
       <script src="js/jquery-3.3.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script src="js/lc_lightbox.lite.min.js"></script>
       <script src="js/validation.js"></script>
       <script>
          $(function () {
@@ -314,6 +379,9 @@
              });
          })
       </script>
-      <p>test pull-a</p>
+
+      // inicijalizacija lightbox-a nad elementima sa klasom elem
+
+
    </body>
 </html>
