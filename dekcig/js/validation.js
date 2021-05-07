@@ -1,30 +1,30 @@
 
 $(document).ready(function(){
-    $("#ime").keyup(function(){
+    $("#ime").blur(function(){
         let ime = $(this).val();
         let regexIme = /^[A-Z][a-z]{2,29}$/;
         let incorIme = $('#imeError');
         naKljucGore(ime,regexIme,incorIme);
     })
-    $("#telefon").keyup(function(){
+    $("#telefon").blur(function(){
         let telefon = $(this).val();
         let regexTelefon = /^\d{7,20}$/;
         let incorTelefon = $('#telefonError');
         naKljucGore(telefon,regexTelefon,incorTelefon);
     })
-    $("#email").keyup(function(){
+    $("#email").blur(function(){
         let email = $(this).val();
         let regexMail = /^\w+[\d\w\.\-\_]+\@[a-z]{2,10}(\.[a-z]{2,3})+$/;
         let incorMail = $('#emailError');
         naKljucGore(email,regexMail,incorMail);
     })
-    $("#tip").keyup(function(){
+    $("#tip").blur(function(){
         let tip = $(this).val();
         let regexTip = /^.{4,50}$/;
         let incorTip = $('#tipError');
         naKljucGore(tip,regexTip,incorTip);
     })
-    $("#poruka").keyup(function(){
+    $("#poruka").blur(function(){
         let poruka = $(this).val();
         let regexPoruka = /^.{4,100}$/;
         let incorPoruka = $('#porukaError');
