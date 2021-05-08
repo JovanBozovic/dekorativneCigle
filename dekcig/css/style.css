@@ -550,7 +550,7 @@ h3.blog_head {
     position: absolute;
     width: 60%;
     margin: 0 15%;
-    z-index: 1111111111;
+    z-index: 11111;
     top: 135px;
     left: 0;
     padding: 50px 60px 70px;
@@ -1245,10 +1245,36 @@ p {
 }
 
 #header{
-    z-index: 9999999999;
+    z-index: 99999999;
     width: 100%;
     position:fixed;
 }
 button{
     cursor: pointer;
+}
+#galerija{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/15/18/42/white-1044659_960_720.jpg);
+  background-size:cover;
+
+}
+/*.galerija span{
+  border: 3px;
+  border-style: groove;
+}*/
+#galerija h2{
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  font-weight: 700;
+  color: #3a3a3a;
+  text-transform: uppercase;
+}
+#lcl_image_elem{
+  z-index: 232323232332;
+}
+.redSlika{
+  padding-right: 0px;
+  padding-left: 20px;
 }
