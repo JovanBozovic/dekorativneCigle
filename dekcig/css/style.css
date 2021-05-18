@@ -776,6 +776,11 @@ footer .copyright p {
 
 @media (max-width: 992px) {
 
+    /* *{
+      text-align:center;
+    } */
+
+
     /* header */
 
     header h1 {
@@ -783,7 +788,9 @@ footer .copyright p {
     }
 
     /* navbar */
-
+    .navbar{
+      z-index: 99999999;
+    }
     .navbar ul {
         background-color: #4fcaff;
     }
@@ -793,6 +800,14 @@ footer .copyright p {
     nav.navbar form {
         width: 100%;
         position: static;
+    }
+    /* slider */
+    .ovarlay_slide_cont {
+        z-index: 11;
+
+    }
+    .slider{
+      padding-top: 90px;
     }
 
     /* about */
@@ -1021,7 +1036,7 @@ footer .item h4 {
     position: absolute;
     width: 70%;
     margin: 0 15%;
-    z-index: 1111111111;
+    z-index: 11;
     top: 0;
     left: 0;
     padding: 50px 60px 70px;
@@ -1256,7 +1271,7 @@ button{
   padding-top: 12px;
   padding-bottom: 12px;
   background-image: url(https://cdn.pixabay.com/photo/2015/11/15/18/42/white-1044659_960_720.jpg);
-  background-size:cover;
+  background-size:stretch;
 
 }
 /*.galerija span{
