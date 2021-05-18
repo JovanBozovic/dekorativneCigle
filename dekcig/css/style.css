@@ -806,6 +806,9 @@ footer .copyright p {
         z-index: 11;
 
     }
+    .arrows{
+      display: none;
+    }
     .slider{
       padding-top: 90px;
     }
