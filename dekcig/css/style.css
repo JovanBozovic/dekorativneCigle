@@ -776,10 +776,10 @@ footer .copyright p {
 
 @media (max-width: 992px) {
 
-    /* *{
-      text-align:center;
-    } */
 
+    #header,#home,#wcs,#about,#hiw,#service,#galerija,#contact{
+      text-align: center;
+    }
 
     /* header */
 
