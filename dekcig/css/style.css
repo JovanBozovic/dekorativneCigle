@@ -1027,6 +1027,9 @@ footer .item h4 {
     height: 45px;
     border: none;
 }
+.navbar-toggler:focus{
+    outline: none;
+}
 
 @media (min-width: 992px) and (max-width: 1199px) {
 
@@ -1295,4 +1298,10 @@ button{
 .redSlika{
   padding-right: 0px;
   padding-left: 20px;
+}
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
 }

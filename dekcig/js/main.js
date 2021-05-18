@@ -1,4 +1,29 @@
 /* paste this line in verbatim */
+$(document).ready(function(){
+
+    el_autohide = document.querySelector('.autohide');
+
+    if(el_autohide){
+        var last_scroll_top = 0;
+        window.addEventListener('scroll', function() {
+            let scroll_top = window.scrollY;
+            if(scroll_top < last_scroll_top) {
+                el_autohide.classList.remove('scrolled-down');
+                el_autohide.classList.add('scrolled-up');
+                $(".navbar-toggler").addClass("collapsed")
+                $(".navbar-toggler").attr('aria-expanded',false);
+                $("#show-menu").removeClass("show")
+            }
+            else {
+                el_autohide.classList.remove('scrolled-up');
+                el_autohide.classList.add('scrolled-down');
+            }
+            last_scroll_top = scroll_top;
+        });
+    }
+
+
+})
 window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
 
 /* customize formbutton below*/
