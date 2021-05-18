@@ -1,3 +1,3 @@
 "# dekorativneCigle" 
 "# dekorativneCigle" 
-https://jovanbozovic.github.io/dekorativneCigle/
+https://jovanbozovic.github.io/dekorativneCigle/dekcig/index.html
