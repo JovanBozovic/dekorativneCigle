@@ -921,8 +921,10 @@ footer .copyright p {
 
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 500px) {
+    .kasli{
+      background-size: cover !important;
+    }
 }
 #wcs{
   overflow: hidden;
