@@ -1,6 +1,6 @@
 /* paste this line in verbatim */
 $(document).ready(function(){
-
+    AOS.init();
     el_autohide = document.querySelector('.autohide');
 
     if(el_autohide){
