@@ -1356,3 +1356,12 @@ font-family: 'Roboto', sans-serif;
 #about{
   height: 600px;
 }
+#service{
+  background-image: url("../imgs/serviceBg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+.cigleBg{
+  background: rgba(204,204,204,.7);
+
+}
