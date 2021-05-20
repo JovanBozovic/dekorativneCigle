@@ -815,7 +815,15 @@ footer .copyright p {
     }
 
     /* about */
-
+    .kasli{
+      bottom: 0px;
+    }
+    #hiw{
+      margin-top: 180px;
+    }
+    #about{
+      padding-bottom: 180px;
+    }
     .about-us .small-container > p + div {
         padding: 50px 0;
     }
@@ -867,7 +875,10 @@ footer .copyright p {
       padding-right: 0 !important;
       margin: 0;
     }
-
+    .kontakt-levo{
+    padding-left: 15px;
+     padding-right: 15px;
+    }
     /* footer */
 
     footer .col-lg-3 {
@@ -910,10 +921,13 @@ footer .copyright p {
 
 
 .testimonial_blog {
+  right: 30;
+    position: relative;
+    top: 0;
     background: #a1a1a1;
     width: 100%;
     padding: 40px 50px;
-    box-shadow: 50px 50px 0 0 #4fcaff;
+    box-shadow: 0px 0px 0 0 #4fcaff;
 }
 
 .testimonial_blog p {
@@ -1321,4 +1335,15 @@ font-family: 'Roboto', sans-serif;
 }
 .kontakt-desno ul li i{
   color: white;
+}
+.kasli{
+  background-image:url("../imgs/slika5.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:auto;
+  height: 500px;
+}
+#about{
+  height: 600px;
 }

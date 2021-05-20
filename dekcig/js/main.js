@@ -26,6 +26,24 @@ $(document).ready(function(){
 })
 window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
 
+
+// Paralaksa
+let element = document.getElementById("nasPosao");
+
+window.addEventListener('scroll',function(){
+    var value = window.scrollY;
+    console.log(value)
+    element.style.left = value * 0.07 + 'px';
+    var dole=0;
+    var desno=0;
+    var blur=30;
+    dole+=value*0.12;
+    desno+=value*0.12;
+    blur-=value*0.05;
+    element.style.boxShadow=dole+"px "+desno+"px "+blur+"px 0 #4fcaff"
+})
+
+
 /* customize formbutton below*/
 formbutton("create", {
     action: "https://formspree.io/f/xknkoajq",
