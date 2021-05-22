@@ -1214,13 +1214,13 @@ h3.blog_head {
 .service_blog h3.blog_head {
     float: left;
     background: #4fcaff;
-    text-align: center;
+    text-align: start;
     font-size: 16px;
     text-transform: none;
     margin: 0;
     min-height: 50px;
     line-height: 50px;
-    padding: 0 40px;
+    padding: 0 5px;
     color: #fff;
     position: absolute;
     bottom: 0;
