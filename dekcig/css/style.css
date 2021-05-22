@@ -1380,3 +1380,6 @@ font-family: 'Roboto', sans-serif;
   background: rgba(204,204,204,.7);
 
 }
+.col-6{
+  align-items: center;
+}
