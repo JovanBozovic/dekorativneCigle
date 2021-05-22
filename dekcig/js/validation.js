@@ -19,12 +19,12 @@ $(document).ready(function(){
         let incorMail = $('#emailError');
         naKljucGore(email,regexMail,incorMail);
     })
-    $("#tip").blur(function(){
-        let tip = $(this).val();
-        let regexTip = /^.{4,50}$/;
-        let incorTip = $('#tipError');
-        naKljucGore(tip,regexTip,incorTip);
-    })
+    // $("#tip").blur(function(){
+    //     let tip = $(this).val();
+    //     let regexTip = /^.{4,50}$/;
+    //     let incorTip = $('#tipError');
+    //     naKljucGore(tip,regexTip,incorTip);
+    // })
     $("#poruka").blur(function(){
         let poruka = $(this).val();
         let regexPoruka = /^.{4,100}$/;
@@ -78,21 +78,21 @@ function provera(){
     let ime = $("#ime").val();
     let telefon = $("#telefon").val();
     let email = $("#email").val();
-    let tip = $("#tip").val();
+    // let tip = $("#tip").val();
     let poruka = $("#poruka").val();
     // vrednosti
     // regularni izrazi
     let regexIme = /^.{3,50}$/;
     let regexTelefon = /^\d{7,20}$/;
     let regexMail = /^\w+[\d\w\.\-\_]+\@[a-z]{2,10}(\.[a-z]{2,3})+$/;
-    let regexTip = /^.{4,50}$/;
+    // let regexTip = /^.{4,50}$/;
     let regexPoruka = /^.{4,50}$/;
     // regularni izrazi
     // greske za prikaz
     let incorIme = $('#imeError');
     let incorTelefon = $('#telefonError');
     let incorMail = $('#emailError');
-    let incorTip = $('#tipError')
+    // let incorTip = $('#tipError')
     let incorPoruka = $('#porukaError')
     // greske za prikaz
     // provere
@@ -102,8 +102,8 @@ function provera(){
         return false
     if(!proverePolja(email,regexMail,incorMail))
         return false
-    if(!proverePolja(tip,regexTip,incorTip))
-        return false
+    // if(!proverePolja(tip,regexTip,incorTip))
+    //     return false
     if(!proverePolja(poruka,regexPoruka,incorPoruka))
         return false
     showAffirmationMessageAndClearTextValues();
@@ -117,7 +117,7 @@ function showAffirmationMessageAndClearTextValues(){
         $("#ime").val("");
         $("#telefon").val("");
         $("#email").val("");
-        $("#tip").val("");
+        // $("#tip").val("");
         $("#poruka").val("");
     }
 }
