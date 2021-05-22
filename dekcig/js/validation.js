@@ -2,7 +2,8 @@
 $(document).ready(function(){
     $("#ime").blur(function(){
         let ime = $(this).val();
-        let regexIme = /^[A-Z][a-z]{2,29}$/;
+        // let regexIme = /^[A-Z][a-z]{2,29}$/;
+        let regexIme = /^.{3,50}$/;
         let incorIme = $('#imeError');
         naKljucGore(ime,regexIme,incorIme);
     })
@@ -81,7 +82,7 @@ function provera(){
     let poruka = $("#poruka").val();
     // vrednosti
     // regularni izrazi
-    let regexIme = /^[A-Z][a-z]{2,29}$/;
+    let regexIme = /^.{3,50}$/;
     let regexTelefon = /^\d{7,20}$/;
     let regexMail = /^\w+[\d\w\.\-\_]+\@[a-z]{2,10}(\.[a-z]{2,3})+$/;
     let regexTip = /^.{4,50}$/;
